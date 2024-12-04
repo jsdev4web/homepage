@@ -6,6 +6,41 @@ body {
 
 }
 
+@media (max-device-width: 480px){
+    body {
+        background-color:blue;
+        width: 25%;
+    }
+    .wrapper { width: 25%; }
+    .top {  width: 25%; }
+    .wrapOne { 
+        max-width: 14%;
+        display: flex; flex-direction: column; 
+    }
+    .me1 { max-height: 175%;}
+    .rect { max-width: 155%;}
+    .middle { max-width: 25%; max-height: 125%; display: block;}
+    .midhold { max-width: 70%;}
+    div#midWrap { display: block; }
+    div.midCells { height: 5rem; width: 8rem; }
+    .colorBox{ max-height: 50%;}
+    .cBox { font-size: 20%;}
+    div.low { display: block; max-width: 25%; }
+    div.lowL { width: 50%;}
+    div.lowR { width: 67%; margin-top: 15%;}
+}
+
+@media (max-device-width: 1024px){
+    body {background-color:red;}
+    .wrapper { width: 50%;}
+    .top { width: 50%;}
+    .wrapOne { max-width: 50%;}
+    .middle { max-width: 50%;}
+    div#midWrap { display: grid; grid-template-columns: repeat(2, 1fr);}
+    .low { width:50%;  }
+}
+
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -14,6 +49,7 @@ body {
     width: 100vh;
     margin-left: 30%;
 }
+
 
 .top {
     position: relative;
@@ -33,7 +69,7 @@ body {
 
 .me1 {
     margin-left: 13%;
-    height: 275px;
+    height: 17.188rem;
     width: 175%;
     object-fit: contain;
 }
@@ -89,20 +125,23 @@ body {
     font-size: 1.5rem;
 }
 
+
 #midWrap {
     width: 25rem;
     height: 25rem;
     display: grid;
     justify-content: space-around;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
     row-gap: 1%;
     column-gap: 3%;
 }
 
+
+
 .midCells {
     height: 9rem;
     width: 8rem;
-    box-shadow: 3px 3px #D3D3D3;
+    box-shadow: 0.188rem 0.188rem #D3D3D3;
     display: flex;
     flex-direction: column;
 }
@@ -173,7 +212,7 @@ body {
 }
 
 .meTwo {
-    height: 220px;
+    height: 13.75rem;
     width: 150%;
     object-fit: cover;
 }
