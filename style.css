@@ -123,6 +123,7 @@ body {
 
 .mywork {
     font-size: 1.5rem;
+    margin-top: 5%;
 }
 
 
@@ -199,6 +200,7 @@ body {
     height: 33vh;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10%;
 }
 
 .lowL {
